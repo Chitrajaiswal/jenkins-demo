@@ -15,7 +15,7 @@ sh 'java -jar rectangle.jar 7 9'
 }
 stage ('Build Image'){  
      steps{ 
-        sh 'sudo docker image build -t Area-Perimeter .'
+        sh 'sudo docker image build -t area-perimeter .'
         }
     }
 }
