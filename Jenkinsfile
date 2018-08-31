@@ -19,11 +19,6 @@ stage ('Build Image'){
         }
     }
 }
-stage ('Run on container'){
-     steps{
-        sh 'sudo docker run -d --name=new area-perimeter
-        }
-    }
 post {
 success {
 archiveArtifacts artifacts: 'rectangle.jar', fingerprint:
